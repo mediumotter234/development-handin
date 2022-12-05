@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<h1>
+    Development: Film Collection
+</h1>
+
+<div class="body-text">
+    <center>Fall 2022, CS1300 Assignment</center>
+
+    <h3>CONTEXT</h3>
+    <p>I used React to develop a <a href="https://mediumotter234.github.io/development/">simple interactive interface</a> with components and state that allows users to browse and interact
+        with a short collection of films, including the ability to sort, filter and aggregate. Specifically, the users have the 
+        ability to filter by genre and rating (stackable), sort by recency of release date, and add to and remove from a
+        watchlist which aggregates the total runtime of films in the watchlist.
+    </p>
+
+    <h3>DETAILS</h3>
+    <p>
+        I use two main components, a MovieItem component and a FilterOption component. The MovieItem component represents
+        everything in each movie card item that's shown, and the FilterOption component describes each filter option provided.
+        <br>
+        <br>
+        When the user selects or unselects any of the filtering options or sorting dropdowns, my app has onchange functions to
+        handle these changes. In each of these functions, the result of the user's action is taken into account in setting the
+        new state, whether it's unchecking a genre filter or selecting a sort option. Thus at any state, the app should know
+        which genre filters are selected, which rating filter is selected, which sorting option is selected, and whether or not
+        the watchlist option is selected.
+        <br>
+        <br>
+        Once these changes are handled, every time the site is rendered, the app uses the new state to determine precisely which
+        movies should be rendered based on the current state of the genre filters, rating filters, sort option, and watchlist
+        option.
+    </p>
+
+    <h3> TAKEAWAYS </h3>
+    <div>
+        <p>
+            
+        </p>
+    </div>
+</div>
+
+</html>
